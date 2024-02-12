@@ -5,13 +5,14 @@ import pandas
 import datetime as dt
 import smtplib
 import random
-# 1. Update the birthdays.csv
 
 PLACEHOLDER_NAME = "[NAME]"
 my_email = "example123@gmail.com"
 my_password = "placeholder password"
 current_time = dt.datetime.now()
 
+
+# 1. Update the birthdays.csv
 
 def save_birthday():
     ok_to_save = messagebox.askokcancel(title="Are you sure?", message=f"You are about to save the following details:\n"
